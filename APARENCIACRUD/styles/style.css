@@ -92,6 +92,8 @@ nav button {
     border-radius: 4px;
     font-weight: bold;
     cursor: pointer;
+    background: #219EAC;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 7.3px 5px rgba(0, 0, 0, 0.25) inset;
 
 }
 .botao-link:hover {
@@ -131,7 +133,7 @@ nav button {
     justify-content: space-around;
     align-items: center;
     gap: 15px; 
-    background: #fff;
+
     padding: 20px 15px; 
     box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
     width: 90%; 
@@ -139,8 +141,10 @@ nav button {
     margin: 0 auto;
     position: relative;
     top: -50px; 
-    border-bottom: 4px solid #00aab3;
+    background: #FFF;
+    box-shadow: 0px 4px 5.2px 0px #219EAC;
     border-radius: 4px;
+
 }
 
 .botao-funcional {
