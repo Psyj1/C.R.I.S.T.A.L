@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login / Registro – Cristal</title>
+  <link rel="stylesheet" href="styles/registro.css" />
+</head>
+<body>
+
+<div class="container" id="container">
+  <div class="white-panel">
+    <div class="form login-form">
+      <h1>Login</h1>
+      <form>
+        <label for="email">Email</label>
+        <input id="email" type="email" required />
+        <label for="senha">Senha</label>
+        <input id="senha" type="password" required />
+        <button type="submit">LOGIN</button>
+      </form>
+      <div class="switch">Não possuo conta! <a href="#" id="toRegister">Clique aqui</a></div>
+    </div>
+    <div class="form register-form">
+      <h1>Cadastro</h1>
+      <form>
+        <label for="reg-email">Email</label>
+        <input id="reg-email" type="email" required />
+        <label for="reg-senha">Senha</label>
+        <input id="reg-senha" type="password" required />
+        <button type="submit">CADASTRAR-SE</button>
+      </form>
+      <div class="switch">Já possuo conta! <a href="#" id="toLogin">Clique aqui</a></div>
+    </div>
+  </div>
+  <div class="blue-panel">
+    <img src="img/pana.png" alt="Ilustração"/>
+  </div>
+</div>
+
+<script>
+  const container = document.getElementById('container');
+  document.getElementById('toRegister').addEventListener('click', e => { e.preventDefault(); container.classList.add('register-mode'); });
+  document.getElementById('toLogin').addEventListener('click', e => { e.preventDefault(); container.classList.remove('register-mode'); });
+</script>
+
+
+</body>
+</html>
