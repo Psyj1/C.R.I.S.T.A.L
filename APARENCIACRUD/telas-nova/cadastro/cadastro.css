@@ -1,0 +1,98 @@
+@font-face {
+  font-family: saira;
+  src: url(../font/SairaCondensed-ExtraBold.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    font-family:saira;
+  }
+  
+  body {
+    background: conic-gradient(from 180deg at 50% 50%, #000 67.04368650913239deg, #272727 210.47109603881836deg);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #00a8b5;
+    margin-bottom: 10px;
+  }
+  
+  .subtitulo {
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  form fieldset {
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  form legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 16px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .input-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .input-group input,
+  .input-group select {
+    flex: 1;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  button {
+    background-color: #00a8b5;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #008d99;
+  }
+  

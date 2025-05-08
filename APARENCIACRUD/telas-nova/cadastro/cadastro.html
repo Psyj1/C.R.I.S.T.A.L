@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastro de Usuário Interno</title>
+  <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+  <div class="container">
+    <h1>CADASTRO DE USUÁRIO INTERNO</h1>
+    <p class="subtitulo">Preencha os dados abaixo para registrar um novo colaborador no sistema C.R.I.S.T.A.L</p>
+
+    <form>
+      <fieldset>
+        <legend>Informações Pessoais</legend>
+        <input type="text" placeholder="Nome Completo" required>
+        <div class="input-group">
+          <input type="tel" placeholder="Telefone" required>
+          <input type="email" placeholder="Email" required>
+        </div>
+        <input type="date" placeholder="Data Nascimento" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Função no Sistema</legend>
+        <input type="text" placeholder="Cargo" required>
+        <div class="input-group">
+          <input type="text" placeholder="Unidade de ensino" required>
+          <select required>
+            <option disabled selected>Setor de Atuação</option>
+            <option>Administrativo</option>
+            <option>Pedagógico</option>
+            <option>Tecnologia</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Permissões de Acesso</legend>
+        <label><input type="checkbox"> Acesso ao Painel de Controle</label>
+        <label><input type="checkbox"> Gerenciar Previsão de Evasão</label>
+        <label><input type="checkbox"> Visualizar Histórico de Usuários</label>
+        <label><input type="checkbox"> Editar Recomendações de Cursos</label>
+        <label><input type="checkbox"> Administrar Vendas Inteligentes</label>
+      </fieldset>
+
+      <button type="submit">CADASTRAR</button>
+    </form>
+  </div>
+</body>
+</html>
