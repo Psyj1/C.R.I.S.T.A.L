@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'saira';
+    src: url('../fonts/SairaCondensed-ExtraBold.ttf') format('truetype');
+  }
+
+  body {
+    margin: 0;
+    font-family: 'saira', sans-serif;
+    background: linear-gradient(to bottom right, #000, #333);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    width: 500px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  }
+
+  h2 {
+    text-align: center;
+    color: #219EAC;
+    margin-bottom: 30px;
+  }
+
+  .search-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  .search-container input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .search-container button {
+    background-color: #219EAC;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    cursor: pointer;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+  }
+
+  .details {
+    flex: 1;
+    font-size: 14px;
+  }
+
+  .details h4 {
+    margin: 10px 0 5px;
+  }
+
+  .details ul {
+    padding-left: 18px;
+    margin: 0;
+  }
+
+  .circle-score {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(#EF744B 0% 82%, #e0e0e0 0%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+  }
+
+  .circle-score span {
+    font-size: 14px;
+    font-weight: normal;
+  }
