@@ -4,5 +4,17 @@
         <p>📧 cristal.tk@gmail.com</p>
     </div>
 </footer>
+
+<script>
+    const container = document.getElementById('container');
+    document.getElementById('toRegister').addEventListener('click', e => {
+      e.preventDefault();
+      container.classList.add('register-mode');
+    });
+    document.getElementById('toLogin').addEventListener('click', e => {
+      e.preventDefault();
+      container.classList.remove('register-mode');
+    });
+  </script>
 </body>
 </html>

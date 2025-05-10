@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'saira';
+    src: url('../fonts/SairaCondensed-ExtraBold.ttf') format('truetype');
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo img {
+    width: 80px;
+    height: auto;
+  }
+   
+
+body {
+    font-family: saira;
+    background: linear-gradient(to bottom right, #000, #333);
+    padding: 30px;
+  }
+  
+  .painel {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    width: 500px;
+    margin: 0 auto 30px auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .titulo {
+    text-align: center;
+    color: #219EAC;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .botao {
+    border-radius: 10px;
+    background: #219EAC;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .botao svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+  }
+  
+  .lista-icones {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .lista-icones li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 16px;
+    gap: 10px;
+  }
+  
+  .lista-icones svg {
+    width: 20px;
+    height: 20px;
+    fill: black;
+  }
+  

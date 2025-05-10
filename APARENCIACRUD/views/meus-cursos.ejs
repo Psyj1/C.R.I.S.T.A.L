@@ -1,0 +1,50 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/navbar.ejs') %>
+  <div class="painel-cursos">
+    <h1>MEUS CURSOS</h1>
+
+    <section class="secao">
+      <h2>CURSOS OFERECIDOS PELA UNIDADE</h2>
+
+      <div class="curso">
+        <div class="detalhes">
+          <strong>Tecnologia da Informação</strong>
+          <p>Carga horária</p>
+          <p>Professora Responsável</p>
+          <p>Turmas</p>
+          <p>Início:</p>
+        </div>
+        <button class="btn-detalhes">Ver detalhes <span>&#9660;</span></button>
+      </div>
+
+      <div class="curso">
+        <div class="detalhes">
+          <strong>Auxiliar administrativo</strong>
+          <p>Carga horária</p>
+          <p>Professora Responsável</p>
+          <p>Turmas</p>
+          <p>Início:</p>
+        </div>
+        <button class="btn-detalhes">Ver detalhes <span>&#9660;</span></button>
+      </div>
+    </section>
+
+    <section class="secao">
+      <h2>CURSOS COM VAGAS ABERTAS</h2>
+      <div class="vagas-resumo">
+        <div class="vaga">
+          <strong>Assistente de Recursos Humanos</strong>
+          <p>8 vagas restantes</p>
+          <p>Início:</p>
+        </div>
+        <div class="resumo">
+          <strong>Resumo da Unidade</strong>
+          <p>Total de Cursos ativos:</p>
+          <p>Vagas disponíveis:</p>
+          <p>Professores ativos:</p>
+          <div class="grafico"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+<%- include ('partials/footer.ejs') %>
