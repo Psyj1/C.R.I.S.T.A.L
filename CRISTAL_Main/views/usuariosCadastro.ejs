@@ -1,0 +1,110 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/navbar.ejs') %>
+<link rel="stylesheet" href="/css/cadastro.css">
+<!-- Flatpickr CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+
+<br>
+<br>
+<br>
+
+<div class="wrapper">
+
+      <div class="container" id="container">
+        <div class="white-panel">
+          <!-- Login -->
+          <div class="form login-form">
+            <h1>Login</h1>
+            <form>
+              <label for="email">Email</label>
+              <input id="email" type="email" required />
+              <label for="senha">Senha</label>
+              <input id="senha" type="password" required />
+              <button type="submit">LOGIN</button>
+      </form>
+      <div class="switch">Não possuo conta! <a href="#" id="toRegister">Clique aqui</a></div>
+    </div>
+    
+    <!-- Cadastro -->
+    <div class="form register-form">
+      <h1>Cadastro</h1>
+      <form class="form-flex" action="/usuariosCadastro/cadastrar" method="POST">
+        <div class="input-row">
+          <div class="form-group">
+            <label for="Nome_unidade">Nome</label>
+            <input id="Nome_unidade" name="Nome_Usuario" type="text" required />
+          </div>
+          <div class="form-group">
+            <label for="Area_Atuacao">Data de Nascimento</label>
+            <input id="Data_Nascimento_Usuario" name="Data_Nascimento_Usuario" type="text" required />
+
+          </div>
+        </div>
+      
+        <div class="input-row">
+          <div class="form-group">
+            <label for="CNPJ_Unidade">Perfil de Acesso</label>
+            <input id="CNPJ_Unidade" name="Perfil_Acesso" type="text" required />
+          </div>
+        </div>
+      
+        <div class="input-row">
+          <div class="form-group">
+            <label for="Rua">Email</label>
+            <input id="Rua" name="Email_Usuario" type="text" required />
+          </div>
+          <div class="form-group">
+            <label for="Bairro">Telefone</label>
+            <input id="Bairro" name="Telefone_Usuario" type="text" required />
+          </div>
+        </div>
+      
+        <div class="input-row">
+          <div class="form-group">
+            <label for="Numero">Senha</label>
+            <input id="Numero" name="Senha_Usuario" type="text" required />
+          </div>
+        </div>
+      
+        <div class="form-group full-width">
+          <button type="submit">CADASTRAR-SE</button>
+        </div>
+      </form>
+      
+      
+      <div class="switch">Já possuo conta! <a href="#" id="toLogin">Clique aqui</a></div>
+    </div>
+  </div>
+
+  <div class="blue-panel">
+    <img src="img/pana.png" alt="Ilustração"/>
+  </div>
+</div>
+</div>
+
+<script>
+  const container = document.getElementById('container');
+  document.getElementById('toRegister').addEventListener('click', e => {
+    e.preventDefault();
+    container.classList.add('register-mode');
+  });
+  document.getElementById('toLogin').addEventListener('click', e => {
+    e.preventDefault();
+    container.classList.remove('register-mode');
+  });
+</script>
+<!-- Flatpickr JS -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<!-- Locale PT -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/pt.js"></script>
+<script>
+ flatpickr("#Data_Nascimento_Usuario", {
+  dateFormat: "Y-m-d",
+  maxDate: "today",
+  altInput: true,
+  altFormat: "d/m/Y",
+  locale: "pt",      // usa o pt
+});
+
+</script>

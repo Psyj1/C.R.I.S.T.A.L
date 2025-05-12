@@ -1,0 +1,94 @@
+@font-face {
+    font-family: saira;
+    src: url(../font/SairaCondensed-ExtraBold.ttf);
+}
+
+body {
+    background: linear-gradient(to bottom, #111, #333);
+    font-family: 'saira';
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .painel-cursos {
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #00a8b5;
+    margin-bottom: 30px;
+  }
+  
+  .secao {
+    margin-bottom: 30px;
+  }
+  
+  .secao h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .curso {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #f8f8f8;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  
+  .detalhes p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .btn-detalhes {
+    background-color: #efefef;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .btn-detalhes span {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  
+  .vagas-resumo {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .vaga, .resumo {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .vaga p, .resumo p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .resumo .grafico {
+    margin-top: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: conic-gradient(#00a8b5 0% 33%, #a0f0d0 33% 66%, #d0f0e0 66% 100%);
+  }
+  

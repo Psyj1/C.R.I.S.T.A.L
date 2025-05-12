@@ -1,0 +1,55 @@
+<%- include('partials/header.ejs') %> 
+<%- include('partials/navbar.ejs') %>
+<link rel="stylesheet" href="/css/usuarios.css">
+
+<div class="painel">
+  <h1 class="titulo">GERENCIADOR USUÁRIOS</h1>
+  <div class="tabela-container">
+    <input type="text" class="busca-input" placeholder="Buscar" />
+
+    <table class="tabela-usuarios">
+      <thead>
+        <tr>
+          <th>NOME</th>
+          <th>E-MAIL</th>
+          <th>CARGO</th>
+          <th colspan="2">AÇÕES</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% usuarios.forEach(function(usuario) { %>
+          <tr>
+            <td><%= usuario.Nome_Usuario %></td>
+
+            <!-- Garante acesso seguro ao primeiro e-mail relacionado -->
+            <td><%= usuario.Emails_Usuarios?.[0]?.Email_Usuario || "Sem e-mail" %></td>
+
+            <td><%= usuario.Perfil_Acesso %></td>
+
+            <td>
+              <!-- Rota de edição -->
+                <a href="/usuarios/edit/<%= usuario.ID_Usuario %>">
+                <button class="btn btn-alterar">Alterar</button></a>
+              </a>
+            </td>
+            <td>
+              <!-- Confirmação de exclusão -->
+              <a onclick="return confirm('Deseja mesmo excluir o usuário?')" href="/usuarios/delete/<%= usuario.ID_Usuario %>">
+                <button class="btn btn-excluir">Excluir</button>
+              </a>
+            </td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+
+    <div class="cadastrar-container">
+      <a href="/usuariosCadastro">
+        <button class="btn btn-cadastrar">CADASTRAR</button>
+      </a>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer.ejs') %>
+

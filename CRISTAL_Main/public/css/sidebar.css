@@ -1,0 +1,83 @@
+@font-face {
+  font-family: saira;
+  src: url(../font/SairaCondensed-ExtraBold.ttf);
+}
+
+
+body {
+    margin: 0;
+    font-family: 'saira';
+  }
+  
+  .sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #26A1AF;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .logo img {
+    width: 30px;
+  }
+  
+  .logo span {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    background-color: #3bb3bf;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .search-box i {
+    margin-right: 10px;
+  }
+  
+  .search-box input {
+    border: none;
+    background: transparent;
+    outline: none;
+    color: white;
+    width: 100%;
+  }
+  
+  .search-box input::placeholder {
+    color: #dceef0;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .menu li:hover {
+    background-color: #3bb3bf;
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+  

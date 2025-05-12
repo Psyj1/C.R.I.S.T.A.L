@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="/css/registro.css">
+
+<div class="wrapper">
+  <div class="form-container">
+    <h1 class="form-title">Perfil</h1>
+    <div class="user-icon">👤</div>
+    <form action="/usuarios/edit/<%= usuario.ID_Usuario %>" method="POST">
+      <label for="Nome_Usuario">Nome de Usuário</label>
+      <input type="text" name="Nome_Usuario" value="<%= usuario.Nome_Usuario %>" required />
+
+      <label for="Data_Nascimento_Usuario">Data de Nascimento</label>
+      <input type="date" name="Data_Nascimento_Usuario" value="<%= usuario.Data_Nascimento_Usuario.split('T')?.[0] || usuario.Data_Nascimento_Usuario %>" required />
+
+      <label for="Perfil_Acesso">Perfil de Acesso</label>
+      <input type="text" name="Perfil_Acesso" value="<%= usuario.Perfil_Acesso %>" required />
+
+      <label for="Email_Usuario">Email</label>
+      <input type="email" name="Email_Usuario" value="<%= usuario.Email_Usuario %>" required />
+
+      <label for="Telefone_Usuario">Telefone</label>
+      <input type="tel" name="Telefone_Usuario" value="<%= usuario.Telefone_Usuario %>" required />
+
+      <label for="Senha_Usuario">Senha</label>
+      <input type="password" name="Senha_Usuario" value="<%= usuario.Senha_Usuario %>" required />
+
+      <button type="submit">SALVAR</button>
+    </form>
+  </div>
+</div>
+
+
